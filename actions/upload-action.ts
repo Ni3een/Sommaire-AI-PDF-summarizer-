@@ -52,15 +52,6 @@ export async function getPDFsummary(uploadResponse: UploadResponse){
             console.log('📝 Summary content:', summary);
         }catch(err){
             console.error('❌ Error generating summary from Gemini:', err);
-            // call another function to generate summary from another model
-            if(err instanceof Error && err.message===('RATE_LIMIT_EXCEEDED')){
-                try{
-                    //summary=await generateSummaryFromOther(pdfText); 
-                }catch(geminiError){
-                    console.error('Error generating summary from fallback model:', geminiError);
-                    throw new Error('Failed to generate summary from fallback model');
-                }
-            }
             return{
                 success:false,
                 message: err instanceof Error ? err.message : 'Failed to generate summary from Gemini',
