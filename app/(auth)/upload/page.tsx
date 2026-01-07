@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MotionDiv, MotionH1, MotionP } from "@/components/common/motion-wrapper";
 import { containerVariants, itemsVariants } from "@/utils/constants";
-
+export const maxDuration=20;
 export default async function UploadPage(){
     const user=await currentUser();
     if(!user?.id) return redirect('/sign-in');
