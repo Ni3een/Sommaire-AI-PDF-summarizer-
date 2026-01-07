@@ -10,8 +10,8 @@ import { isDev } from "./helpers";
 
         ],
         id:'basic',
-        paymentLink:isDev?'https://buy.stripe.com/test_28E4gr9in36FgMbaq19ws00':'',
-        priceId:isDev?'price_1Sk7Fg0poVQ7BJbFZzgeduIN':'',
+        paymentLink:isDev?'https://buy.stripe.com/test_28E4gr9in36FgMbaq19ws00':'https://buy.stripe.com/test_bJe28j66bcHf3Zp9lX9ws02',
+        priceId:isDev?'price_1Sk7Fg0poVQ7BJbFZzgeduIN':'price_1Sn26R0poVQ7BJbFu5JZjHUf',
         description:'Perfect for casual use.'
     },{
         name:'PRO',
@@ -22,8 +22,8 @@ import { isDev } from "./helpers";
             'Access to new features',
             'Markdown Export'],
             id:'pro',
-            paymentLink:isDev?'https://buy.stripe.com/test_bJeeV5bqvePn2Vl55H9ws01':'',
-            priceId:isDev?'price_1Sk7Gy0poVQ7BJbFtEpOvV31':'',
+            paymentLink:isDev?'https://buy.stripe.com/test_bJeeV5bqvePn2Vl55H9ws01':'https://buy.stripe.com/test_4gM3cncuzaz7anN8hT9ws03',
+            priceId:isDev?'price_1Sk7Gy0poVQ7BJbFtEpOvV31':'price_1Sn27O0poVQ7BJbFqk02IdZ3',
             description:'For Professionals and Teams'
     }
 ]
