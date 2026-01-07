@@ -1,6 +1,6 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-const isProtectedRoute=createRouteMatcher([
+const isProtectedRoute = createRouteMatcher([
   '/dashboard(.*)',
   '/summaires(.*)',
   '/upload(.*)'
